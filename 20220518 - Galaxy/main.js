@@ -1,6 +1,6 @@
 let pageData={
     productName:"訂張票到月球",
-    productDescription:"月球之旅",
+    productDescription:"月球之旅是最先進的科技，讓我們一起搭乘太空船遨遊宇宙",
     imageSrc:[
         "images/asteroid.jpg",
         "images/fantasy.jpg",
@@ -15,12 +15,16 @@ let pageData={
         color:'blue',
         'margin-left':'50px',
         'font-size':'20px',
-        'font-style':'italic'
+        'font-style':'italic',
     },
     imageStyleController:{
         margin:'auto',
         display:'block',
         wigth:'50%'
+    },
+    tdStyleController:{
+        width:'20%',
+        'font-size':'18px'
     },
     imageAlt:"Photo from space",
     productClasses:[

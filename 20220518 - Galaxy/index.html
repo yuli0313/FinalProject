@@ -12,11 +12,11 @@
         <h1>Galaxy Tours</h1>
         <div id="app">
             <h2 :class="h2ClassController">{{productName}}</h2>
-            <p :style="pStyleController">{{productDescription}}</p>
-            <table v-for="(productClass, index) in productClasses" :key="index" width="100%">
+            <p :style="pStyleController"><strong>{{productDescription}}</strong></p>
+            <table v-for="(productClass, index) in productClasses" :key="index" width="100%" style="margin-left:50px;">
                 <tr>
-                    <td width="20%">{{productClass.name}}</td>
-                    <td width="20%">US${{productClass.price.toLocaleString('en-US')}}</td>
+                    <td :style="tdStyleController"><strong>{{productClass.name}}</strong></td>
+                    <td :style="tdStyleController">US${{productClass.price.toLocaleString('en-US')}}</td>
                     <td>
                         <button style="width:35%" v-if="productClass.earlyBird">Bool EarlyBird</button>
                         <button style="width:35%" v-else>Book</button>
